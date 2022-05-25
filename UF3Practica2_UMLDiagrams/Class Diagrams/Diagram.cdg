@@ -31,7 +31,7 @@
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="Autor" package="" visibility="public" xPosition="575.0" yPosition="424.0">
+    <Class name="Autor" package="" visibility="public" xPosition="514.0" yPosition="369.0">
       <Fields>
         <Field name="nom" type="String" visibility="private"/>
         <Field name="nacionalidad" type="String" visibility="private"/>
@@ -50,7 +50,9 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <IsRelation name="is" source="CopiaLlibre" target="Llibre"/>
+    <HasRelation name="autor" source="Llibre" target="Autor" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
     <HasRelation name="llibre" source="Biblioteca" target="Llibre" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="lector" source="Biblioteca" target="Lector" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="CopiaLlibre" target="Llibre"/>
   </ClassDiagramRelations>
 </ClassDiagram>
