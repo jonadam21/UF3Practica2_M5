@@ -50,9 +50,10 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="autor" source="Llibre" target="Autor" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
-    <HasRelation name="llibre" source="Biblioteca" target="Llibre" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
-    <HasRelation name="lector" source="Biblioteca" target="Lector" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="llibre" source="Biblioteca" target="Llibre" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
     <IsRelation name="is" source="CopiaLlibre" target="Llibre"/>
+    <HasRelation name="lector" source="Biblioteca" target="Lector" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="autor" source="Llibre" target="Autor" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="copiaLlibre" source="Llibre" target="CopiaLlibre" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
   </ClassDiagramRelations>
 </ClassDiagram>
